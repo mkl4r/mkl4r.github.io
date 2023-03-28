@@ -1,1 +1,286 @@
-Hello World
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My GitHub Pages Website</title>
+
+    <script src="https://kit.fontawesome.com/93e7549df5.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #2e2e2e;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 36px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fff;
+            box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .main h2 {
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin: 20px 0;
+        }
+
+        .main a {
+            color: #2e2e2e;
+            text-decoration: none;
+            border-bottom: 1px solid #2e2e2e;
+        }
+
+        .footer {
+            background-color: #2e2e2e;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer p {
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .projects {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fff;
+            box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .projects h2 {
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .project-card {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            /* adjust the height as needed */
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .project-description {
+            padding: 20px;
+            background-color: #f7f7f7;
+        }
+
+        .project-description h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .project-description p {
+            margin: 0;
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        .project-description a {
+            color: #2e2e2e;
+            text-decoration: none;
+            border-bottom: 1px solid #2e2e2e;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            width: 40%;
+            /* height: 100vh; add this line */
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 20px;
+        }
+
+        .profile-picture img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .header-info {
+            flex: 1;
+            text-align: left;
+        }
+
+        .name {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .contact-info li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .contact-info a {
+            display: block;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            color: #333;
+            /*border: 1px solid #333;
+            border-radius: 50%;*/
+            transition: all 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #fff;
+            background-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="profile-picture">
+                <img src="figures/markus.jpg" alt="Markus Klar">
+            </div>
+            <div class="header-info">
+                <h1 class="name">Markus Klar</h1>
+                <ul class="contact-info">
+                    <li><a href="mailto:markus.klar.ubt@outlook.de"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/markus-klar-719bb41bb/"><i
+                                class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://scholar.google.de/citations?user=rlOiEqQAAAAJ&hl=de&oi=ao"><img width="22px"
+                                height="22px" alt="Google Scholar logo"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/512px-Google_Scholar_logo.svg.png"></a>
+                    </li>
+                    <li><a href="https://www.researchgate.net/profile/Markus-Klar-2"><i class=" fa-brands
+                            fa-researchgate"></i></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="main">
+        <section class="about">
+            <h2>About Me</h2>
+            <p>My name is Markus, and I'm a PhD candidate at the University of Bayreuth. My research focuses on the
+                exciting
+                intersection of human-computer interaction and biomechanical modeling. By using cutting-edge techniques
+                like
+                model predictive control and reinforcement learning, I'm able to simulate and analyze how humans
+                interact
+                with computers in a variety of scenarios.</p>
+            <p>When I'm not working on my research, I enjoy bouldering, playing board games or working on my little
+                startup
+                Zwiwa (<a href="https://zwiwa-drinks.de">check it our here!</a>). I believe that having a diverse set of
+                experiences and perspectives is essential for being a well-rounded researcher and person.</p>
+        </section>
+
+
+
+        <section class="projects">
+            <h2>Projects</h2>
+            <br>
+            <div class="project-card">
+                <a href="https://github.com/mkl4r/sim-mpc">
+                    <img src="figures/simmpc.png" alt="SimMPC">
+                </a>
+                <div class="project-description">
+                    <h3>Simulating Interaction Movements via Model Predictive Control (SimMPC)</h3>
+                    <p>We present a Model Predictive Control framework to simulate interactions with computers, in
+                        particular, mid-air pointing, employing a second-order muscle model and comparing different cost
+                        functions, with results showing high accuracy in predicting individual users' movements, and
+                        providing the publicly available SimMPC framework and code to aid HCI researchers and designers.
+                    </p>
+                    <p style="text-align:center"><a href="https://dl.acm.org/doi/10.1145/3577016">Paper</a> - <a
+                            href="https://github.com/mkl4r/sim-mpc">Code</a></p>
+                </div>
+            </div>
+            <div class="project-card">
+                <a href="https://github.com/aikkala/user-in-the-box">
+                    <img src="figures/uitb.png" alt="UitB">
+                </a>
+                <div class="project-description">
+                    <h3>Breathing Life Into Biomechanical User Models (User in the Box - UitB) </h3>
+                    <p>In this work we propose an approach for generative simulation of interaction with perceptually
+                        controlled biomechanical models using deep reinforcement learning to learn control policies and
+                        apply it to four HCI tasks of increasing difficulty. </p>
+                    <p style="text-align:center"><a href="https://dl.acm.org/doi/10.1145/3526113.3545689">Paper</a> - <a
+                            href="https://github.com/aikkala/user-in-the-box">Code</a></p>
+                </div>
+            </div>
+            <div class="project-card">
+                <a href="https://github.com/fl0fischer/OFC4HCI">
+                    <img src="figures/ofc4hci.jpg" alt="OFC4HCI">
+                </a>
+                <div class="project-description">
+                    <h3>Optimal Feedback Control for Modeling Human–Computer Interaction (OFC4HCI)</h3>
+                    <p>We apply optimal feedback control theory to understand human-computer interaction in pointing
+                        tasks, proposing a single dynamical system interpretation of the human body and computer
+                        dynamics, and introduce a procedure and Python toolbox to identify parameters that best explain
+                        observed user behavior, concluding that OFC presents a powerful framework for HCI to understand
+                        and simulate motion of the human body and interface. </p>
+                    <p style="text-align:center"><a href="https://dl.acm.org/doi/10.1145/3524122">Paper</a> - <a
+                            href="https://github.com/fl0fischer/OFC4HCI">Code</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; Markus Klar 2023. <a href="mailto:markus.klar.ubt@outlook.de">markus.klar.ubt@outlook.de</a>. Made
+            with the help of ChatGPT (work smart, not hard). All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
