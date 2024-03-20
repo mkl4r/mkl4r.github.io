@@ -169,4 +169,6 @@ body {
 .contact-info a:hover {
     color: #fff;
     background-color: #333;
+    width: auto;
+    min-width: 40px;
 }
